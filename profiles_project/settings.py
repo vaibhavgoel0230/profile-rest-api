@@ -25,7 +25,7 @@ SECRET_KEY = '6a^kotq_32d7jz%!zxw!84g-)1-ik28t5%6v=zamd#f1p@hk43'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.get('DEBUG',1)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-35-174-137-46.compute-1.amazonaws.com','127.0.0.1']
 
 
 # Application definition
@@ -123,3 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'profiles_api.UserProfile'
+
+STATIC_ROOT = 'static/'
